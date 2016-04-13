@@ -13,7 +13,7 @@ export default class Init extends React.Component {
 
   render() {
     return (<div>
-              <DevTools />
+              {process.env.NODE_ENV !== 'production' && <DevTools />}
               {this.props.children}
             </div>)
   }
