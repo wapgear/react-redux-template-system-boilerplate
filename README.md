@@ -4,16 +4,27 @@ react-redux-boilerplate
 Great boilerplate for fast creating React/Redux Applications.
 
 
-### Usage
+### Dev mode
 
 ```
 npm install
 npm start
-open http://localhost:3000
+open http://localhost:3008
 ```
 
-Now edit `src/App.js`.  
-Your changes will appear without reloading the browser like in [this video](http://vimeo.com/100010922).
+### Production mode
+
+```
+npm install
+npm run build
+copy
+```
+
+### File locations
+
+* Routes into: `src/index.js`
+* Styles into `src/containers/styles`
+* Forms  into `src/containers/forms`
 
 ### Using `0.0.0.0` as Host
 
