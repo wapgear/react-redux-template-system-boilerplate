@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var merge = require('merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
+var packagejson = require('./package.json')
 
 
 var webpackConfig = {
@@ -17,7 +18,7 @@ var webpackConfig = {
   webpackConfig = merge(webpackConfig, {
     devtool: 'eval',
     entry: [
-      'webpack-dev-server/client?http://localhost:3008',
+      'webpack-dev-server/client?http://localhost:'+packagejson.listenPort,
       'webpack/hot/only-dev-server',
       './src/index'
     ],
