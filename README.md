@@ -46,4 +46,5 @@ You may want to change the host in `server.js` and `webpack.config.js` from `loc
 ### Roadmap
 
 * Add more components
+* Add Isomorphic functional
 * ...
