@@ -4,9 +4,9 @@ import {Link} from 'react-router'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import SignInForm from './forms/SignInForm'
-import SignUpForm from './forms/SignUpForm'
-import './styles/toggle.scss'
+import SignInForm from '../components/forms/SignInForm'
+import SignUpForm from '../components/forms/SignUpForm'
+import '../styles/toggle.scss'
 
 
 import * as UserActions   from './../actions/user'
