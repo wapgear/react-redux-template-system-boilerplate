@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 
-import Sidebar  from './layout/Sidebar/Sidebar'
-import Header   from './layout/Header'
+import Sidebar  from './containers/Sidebar'
+import Header   from './containers/Header'
 import Main     from './containers/Main'
 
 import * as UserActions   from './actions/user'
@@ -24,10 +24,12 @@ class App extends React.Component {
     return (
           <div>
             {this.props.user.status && <div>
-            <Header />
+            <Header color="default"/>
               <div id="wrapper">
                 <div id="layout-static">
-                  <Sidebar data={this.props}/>
+                  <Sidebar
+                    color="inverse"
+                    data={this.props}/>
                   <div className="static-content-wrapper">
                     <div className="static-content">
                       {!this.props.children && <Main />}

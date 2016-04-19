@@ -16,7 +16,7 @@ export default class Header extends React.Component {
 
   render() {
     return(
-<header id="topnav" className="navbar navbar-midnightblue navbar-fixed-top clearfix" role="banner">
+<header id="topnav" className={"navbar navbar-fixed-top clearfix " + (this.props.color ? 'navbar-'+this.props.color : 'navbar-default')} role="banner">
 
         <span id="trigger-sidebar" className="toolbar-trigger toolbar-icon-bg">
           <a onClick={() => {this.sidebarCollapse()} } data-toggle="tooltips" data-placement="right" title="Toggle Sidebar"><span className="icon-bg"><i className="fa fa-fw fa-bars"></i></span></a>

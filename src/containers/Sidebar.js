@@ -1,12 +1,13 @@
 import React from 'react'
+import classNames from 'classnames'
 
-import {Item, Separator, User} from './../../components/layout/sidebar'
+import {Item, Separator, User} from './../components/layout/sidebar'
 
 export default class Sidebar extends React.Component {
   render() {
     const {user} = this.props.data;
     return (
-<div className="static-sidebar-wrapper sidebar-midnightblue">
+<div className={"static-sidebar-wrapper " + (this.props.color ? 'sidebar-'+this.props.color : 'sidebar-default')}>
   <div className="static-sidebar">
     <div className="sidebar">
       <User data={user}/>
