@@ -19,7 +19,7 @@ class App extends React.Component {
 
   render() {
     if(!localStorage.getItem('user_id') ||   !localStorage.getItem('token')) {
-      window.location = '#/sign/in'
+      window.location = '#/sign'
     }
     return (
           <div>

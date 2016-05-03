@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "apiHost": "panel.local",
   "apiPort": "80",
+  "templateDir": "src/skeletons/firstIter/",
   "listenPort": "3008",
   "description": "Best boilerplate for fast start React/Redux admin template engine with ready auth",
   "scripts": {

@@ -3,8 +3,8 @@ import { reduxForm } from 'redux-form'
 import {Link} from 'react-router'
 export const fields = ['name', 'email', 'password', 'password_confirm' ]
 import request from 'axios'
-import config from '../../../package.json'
-import {auth} from '../../actions/user'
+import config from 'package.json'
+import {auth} from 'actions/user'
 
 
 const submit = (values, dispatch) => {

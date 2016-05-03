@@ -1,6 +1,7 @@
 import React from 'react'
 
-import {BreadCrumbs, PageHeading, Block} from '../components/layout/content'
+import {BreadCrumbs, PageHeading} from 'template/layout'
+import {Block} from 'template/components'
 
 export default class Main extends React.Component {
   render() {

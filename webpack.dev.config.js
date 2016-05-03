@@ -11,6 +11,16 @@ var webpackConfig = {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/static/'
+  },
+  resolve: {
+    root: [
+      path.resolve('./'),
+      path.resolve('./src')
+    ],
+    alias: {
+      template: path.resolve(packagejson.templateDir)
+    },
+    extentions: ['.js', '.jsx', '.scss']
   }
 };
 

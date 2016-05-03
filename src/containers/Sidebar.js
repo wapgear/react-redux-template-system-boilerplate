@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-import {Item, Separator, User} from './../components/layout/sidebar'
+import {Item, Separator, User} from 'template/layout/sidebar'
 
 export default class Sidebar extends React.Component {
   render() {

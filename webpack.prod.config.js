@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var merge = require('merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
+var packagejson = require('./package.json')
 
 
 var webpackConfig = {
@@ -10,6 +11,16 @@ var webpackConfig = {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/static/'
+  },
+  resolve: {
+    root: [
+      path.resolve('./'),
+      path.resolve('./src')
+    ],
+    alias: {
+      template: path.resolve(packagejson.templateDir)
+    },
+    extentions: ['.js', '.jsx', '.scss']
   }
 };
 
